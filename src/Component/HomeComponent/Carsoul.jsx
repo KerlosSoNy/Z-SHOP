@@ -20,7 +20,7 @@ export default function Carsoul(){
         <div className='bg-white'>
         <Slider {...settings}>
             <div className=' relative text-center flex flex-col items-center justify-items-center justify-center w-full lg:h-[30rem] h-[22rem]'>
-                <h2 className=' text-black mx-auto my-auto mt-52 bg-white/25 relative text-2xl p-2 lg:text-5xl font-semibold  w-fit z-10'>What You Need Is Here</h2>
+                <h2 className=' text-black mx-auto my-auto mt-40 lg:mt-52 bg-white/25 relative text-2xl p-2 lg:text-5xl font-semibold  w-fit z-10'>What You Need Is Here</h2>
                 <img src="https://wallpapercrafter.com/desktop6/1671864-guatemala-balcones-de-san-cristobal-ii-keyboard.jpg"
                  alt="1pic" 
                  className='w-[100%] lg:h-[30rem] h-[22rem] object-cover absolute top-0 left-0'/>
