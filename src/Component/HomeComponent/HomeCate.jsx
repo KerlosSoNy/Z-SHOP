@@ -5,21 +5,21 @@ const callouts = [
       description: 'Work from home accessories',
       imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-02-edition-01.jpg',
       imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
-      href: '#',
+      href: '/product/Electronics',
     },
     {
-      name: 'Home',
-      description: 'A well-organized home is a happy home.',
-      imageSrc: "https://i.dummyjson.com/data/products/26/1.jpg",
+      name: 'Women',
+      description: 'For Women who settle for nothing but the best. Indulge in excellence.',
+      imageSrc: "https://media.istockphoto.com/id/1208148708/photo/polka-dot-summer-brown-dress-suede-wedge-sandals-eco-straw-tote-bag-cosmetics-on-a-light.jpg?s=612x612&w=0&k=20&c=9Y135GYKHLlPotGIfynBbMPhXNbYeuDuFzreL_nfDE8=",
       imageAlt: 'Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant.',
-      href: '#',
+      href: '/product/Women',
     },
     {
       name: 'Men',
       description: 'For men who settle for nothing but the best. Indulge in excellence.',
-      imageSrc: 'https://i.dummyjson.com/data/products/11/1.jpg',
+      imageSrc: 'https://d1fufvy4xao6k9.cloudfront.net/images/blog/posts/2023/09/hockerty_ethical_fashion_for_men_a28a3041_a73b_4b79_a598_dd7267a0489a.jpg',
       imageAlt: 'Collection of four insulated travel bottles on wooden shelf.',
-      href: '#',
+      href: '/product/Men',
     },
   ]
   

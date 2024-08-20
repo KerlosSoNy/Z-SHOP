@@ -6,7 +6,7 @@ import { CartAtom, ProductAtom,PaymentAtom ,TotalProductsAtom} from './../../Ato
 
 export default function ProductList(){
     let prams = useParams()
-    let [url] = useState("http://localhost:3200/products")
+    let [url] = useState('https://fakestoreapi.com/products')
     let [products , setProducts] = useRecoilState(ProductAtom)
     const [payment ,setPayment] = useRecoilState(PaymentAtom)
     let [addCart , setAddCart] = useRecoilState(CartAtom)
@@ -19,11 +19,24 @@ export default function ProductList(){
         .then(json=>setProducts(json.data))
         }else{
             axios.get(url)
-            .then(json=>setProducts(json.data.filter((e)=> e.category === prams.Categories.toLowerCase())))
+            .then(json=>{
+                let params = prams.Categories
+                if(params === 'Men'){
+                    setProducts(json.data.filter((e)=> e.category === "men's clothing"))
+                } else if(params === 'Women'){
+                    setProducts(json.data.filter((e)=> e.category === "women's clothing"))
+                } else if(params === 'Electronics'){
+                    setProducts(json.data.filter((e)=> e.category === 'electronics'))
+                } else if(params === 'Jewelery'){
+                    setProducts(json.data.filter((e)=> e.category === "jewelery"))
+                }
+                console.log(json)
+            })
         }
     },[prams])
 
-
+    console.log(products)
+    console.log(prams)
     const CartControl = (e , product)=>{
         if(e.currentTarget.innerText === "Add To Cart"){
             setAddCart([...addCart,{product , count : 1} ])

@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom';
 
 export default function ProductsCarsoul(){
     const [products ,setProducts] = useRecoilState(ProductAtom)
-    let [url] = useState("http://localhost:3200/products")
+    let [url] = useState("https://fakestoreapi.com/products")
     useEffect(()=>{
             axios.get(url)
             .then(json=>setProducts(json.data))

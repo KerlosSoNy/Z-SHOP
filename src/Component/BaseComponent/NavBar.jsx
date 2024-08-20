@@ -21,11 +21,10 @@ const productsCate = [
   { name: "Women", to: '/', icon: CursorArrowRaysIcon },
   { name: "Jewelery", to: '/', icon: FingerPrintIcon },
   { name: "Electronics", to: '/', icon: LightBulbIcon },
-  { name: 'Home', to: '/', icon: Bars3Icon },
   { name: 'All', to: '/', icon: RectangleGroupIcon },
 ]
 const callsToAction = [
-  { name: 'Contact sales', to: '/', icon: PhoneIcon },
+  { name: 'Contact sales', to: '/contact', icon: PhoneIcon },
 ]
 
 function classNames(...classes) {
@@ -94,7 +93,7 @@ export default function Nav(){
                       {callsToAction.map((item) => (
                         <Link
                           key={item.name}
-                          to={`/product/${item.name}`}
+                          to={`/contact`}
                           className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-black hover:bg-gray-100"
                         >
                           <item.icon className="h-5 w-5 flex-none text-black" aria-hidden="true" />
